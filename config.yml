@@ -1,0 +1,16 @@
+title: yoshina447.github.io
+description: Let's learn GitHub!!
+template:
+  repo: yoshina447.github.io-template
+  name: yoshina447.github.io
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
